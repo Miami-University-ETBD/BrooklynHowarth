@@ -1,0 +1,8 @@
+div {
+    width: 100%;
+    height: 400px;
+    background-image: url('https://www.travelbutlercounty.com/sites/default/files/2023-09/MiamiUniversityOxfordOhio.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid red;
+  }
