@@ -1,0 +1,108 @@
+.circle{
+  width: 100px;
+  Height: 100px;
+}
+.carousel1{
+  width:500px;
+  height: 500px;
+}
+
+
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #e44f4f;
+}
+
+nav .nav-wrapper ul li a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+nav .nav-wrapper ul li a:hover {
+  background-color: #cd7280;
+}
+
+/* Header Section */
+.header-bg {
+  background-color: #e44f4f;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.header-bg h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.header-bg p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* About Us Section */
+#about {
+  background-color: #cd7280;
+  padding: 50px 0;
+  color: white;
+}
+
+#about .container {
+  max-width: 1200px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Collapsible Section */
+.collapsible-header {
+  background-color: #fa7373;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.collapsible-header:hover {
+  background-color: #cd7280;
+}
+
+.collapsible-body {
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Carousel Section */
+.carousel {
+  margin-top: 30px;
+}
+
+.carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  border-radius: 8px;
+}
