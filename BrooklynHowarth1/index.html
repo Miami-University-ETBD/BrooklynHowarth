@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Miami University Alumni</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Each button only reveals its own section
+      $("button").click(function(){
+        $(this).closest(".alumni").find(".alumni-content").fadeIn(1500);
+      });
+
+      // Hide all content initially
+      $(".alumni-content").hide();
+    });
+  </script>
+  <style>
+    .alumni {
+      margin-bottom: 30px;
+    }
+    .alumni img {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body style="background-color:rgb(255, 155, 152);">
+
+  <nav>
+    <a href="Athletics.html" class="tab">Athletics</a>
+    <a href="Sororities.html" class="tab">Greek Life</a>
+    <a href="index.html" class="tab">Alumni</a>
+    <a href="materialize.html" class="tab">Miami Home</a>
+  </nav>
+
+  <header>
+    <h1>Miami University Alumni Facts</h1>
+    <img src="https://www.travelbutlercounty.com/sites/default/files/2023-09/MiamiUniversityOxfordOhio.jpg" alt="Miami University">
+  </header>
+
+  <p>
+    Being a Redhawk does not end when you walk across the stage to receive your diploma...
+    We stand and say, “Love and Honor”.
+  </p>
+
+  <hr>
+
+  <!-- Alumni 1 -->
+  <div class="alumni">
+    <h2>1. Ben Roethlisberger - Alumni 03'</h2>
+    <div class="alumni-content">
+      <p>Ben started his football career here at Miami...</p>
+      <p><i>benroethlisberger@miamioh.edu</i></p>
+      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcT0UnYEmdc65nRBYY_mJD5CFMDHdWRX-Yj2axCvntLsZ10i_pq321DuwRRzErxSfB6b70acYZ3hnubXZBA" alt="Ben" width="350" height="200">
+    </div>
+    <button type="button">More about Me</button>
+  </div>
+
+  <!-- Alumni 2 -->
+  <div class="alumni">
+    <h2>2. Mike DeWine - Alumni 69'</h2>
+    <div class="alumni-content">
+      <p>Mike DeWine is an American politician and governor of Ohio...</p>
+      <p><i>mikedewine@miamioh.edu</i></p>
+      <img src="https://s3.us-east-2.amazonaws.com/files.fisher.osu.edu/leadreadtoday/public/styles/facebook_share/public/featured/Gov-Mike-DeWine.jpg?VersionId=xm_pNvDKpa6RNeqHDDX5.ZKrOuwd78Ut" alt="Mike" width="350" height="200">
+    </div>
+    <button type="button">More about me</button>
+  </div>
+
+  <!-- Alumni 3 -->
+  <div class="alumni">
+    <h2>3. Bill Hemmer - Alumni 87'</h2>
+    <div class="alumni-content">
+      <p>Bill Hemmer majored in broadcast journalism at Miami University...</p>
+      <p><i>billhemmer@miamioh.edu</i></p>
+      <img src="https://npr.brightspotcdn.com/legacy/sites/wvxu/files/201912/bill_hemmer_fox_news_maybe_bigger_dec_2019.jpg" alt="Bill" width="350" height="200">
+    </div>
+    <button type="button">More about me</button>
+  </div>
+
+  <hr>
+
+  <h1>Fun facts about Miami</h1>
+  <ul>
+    <li>Average high school GPA is 3.9.</li>
+    <li>Miami University is the tenth-oldest public university in the United States.</li>
+    <li>"Miami Mergers" refers to Miami alumni who marry each other (16%).</li>
+    <li>Kiss under the Upham Arch = eternal love.</li>
+    <li>Step on the seal = fail your next exam 😬.</li>
+  </ul>
+
+  <h3>What does it mean to be a student at Miami University?</h3>
+  <p>
+    During the 4 years of being at MU, you not only received your degree...
+    You are welcomed and loved by a Redhawk.
+  </p>
+
+  <hr>
+
+  <footer>
+    <p><b>Brooklyn Howarth</b> | Oxford, Ohio | © 2025 All Rights Reserved</p>  
+  </footer>
+
+</body>
+</html>

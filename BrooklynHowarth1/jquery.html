@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Miami University</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <style>
+       .header-bg {
+           background-color: #e44f4f;
+       }
+       .section-bg {
+           background-color: #cd7280;
+       }
+       .shadow {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .table-header {
+           background-color: #fa7373;
+           color: white;
+       }
+       .carousel {
+           position: relative;
+           margin-top: 50px;
+       }
+   </style>
+   <script>
+      $(document).ready(function() {
+          // Initialize carousel
+          $('.carousel').carousel();
+
+          // Initialize collapsible
+          $('.collapsible').collapsible();
+
+          var isMoved = false;  // Variable to track if the carousel has been moved
+
+          // Animate carousel when button is clicked
+          $("button").click(function(){
+              if (isMoved) {
+                  // If moved, animate back to original position
+                  $(".carousel").animate({left: '0px'}, 1000);
+              } else {
+                  // If not moved, animate to the right
+                  $(".carousel").animate({left: '250px'}, 1000);
+              }
+              isMoved = !isMoved;  // Toggle the movement status
+          });
+      });
+   </script>
+</head>
+
+<body>
+
+   <!-- Navbar -->
+   <nav class="header-bg">
+       <div class="nav-wrapper">
+           <ul>
+               <li><a href="index.html">Miami Home</a></li>
+               <li><a href="athletics.html">Athletics</a></li>
+               <li><a href="sororities.html">Greek Life</a></li>     
+               <li><a href="materialize.html">Alumni</a></li>          
+           </ul>
+       </div>
+   </nav>
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Miami University</h1>
+       <p class="white-text">Preparing for an Amazing Future</p>
+   </div>
+
+   <!-- About Us Section -->
+   <div id="about" class="section section-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+                   <h2>About Us</h2>
+                   <p>Miami University is a public research university in Oxford, Ohio, United States. Founded in 1809, it is the second-oldest university in Ohio and the tenth-oldest public university in the United States.</p>
+               </div>
+               <div class="col s12 m6">
+                   <img src="https://www.travelbutlercounty.com/sites/default/files/2023-09/MiamiUniversityOxfordOhio.jpg" width="500" height="300">
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   <hr>
+   <!-- Collapsible Section -->
+   <ul class="collapsible">
+      <li>
+         <div class="collapsible-header"><i class="material-icons"></i>What is campus life like?</div>
+         <div class="collapsible-body"><span>Whether you want to enhance your passions or explore new opportunities, our vibrant campus life offers you a wide variety of ways to get involved. With more than 50 student organizations and competitive collegiate athletics, theres bound to be something for everyone.</span></div>
+      </li>
+      <li>
+         <div class="collapsible-header"><i class="material-icons"></i>Where did I find out what courses are offered?</div>
+         <div class="collapsible-body"><span>The most up-to-date course information is online at www.mymiami.MiamiOH.edu. You can find the course list in two locations: as a link on the main myMiami page or under the Student Services tab in the registration system. You can search for courses using any of the following parameters: campus, subject, course number, title, attribute, part of term (full semester or sprint course), start time, end time, day, and/or instructor. A course list is also available.</span></div>
+      </li>
+      <li>
+         <div class="collapsible-header"><i class="material-icons"></i>How many hours should I take?</div>
+         <div class="collapsible-body"><span>To be considered a full-time student, you must register for at least 12 hours. The maximum load without special permission is 20 hours. Oxford students are limited to 17 credits initially (18 if majoring in the College of Engineering and Computing), but may add more credits (up to 20) before the semester begins. If you register for more than 18 credit hours, you will be assessed an overload fee. This fee will vary depending on what courses you register for. Please see the One Stop to determine the exact amount of overload fee you will be charged. You may register for more than 17 credit hours during your initial registration if adding a music ensemble with permission from the department or division. Most students take between 14 and 18 hours each semester.</span></div>
+      </li>
+   </ul>
+
+   <!-- Carousel Section -->
+   <div class="carousel">
+       <a class="carousel-item" href="#one!"><img src="https://miamioh.edu/_home-files/images/2021/08/summer-sunset-crop.jpg"></a>
+       <a class="carousel-item" href="#two!"><img src="https://miamioh.edu/_home-files/images/2025/01/shideler-hall-flowers.jpg"></a>
+       <a class="carousel-item" href="#three!"><img src="https://miamioh.edu/_files/images/news/2019/08/campus-shot.jpg"></a>
+   </div>
+
+   <!-- Button to Trigger Animation -->
+   <button>Start Animation</button>
+   
+</body>
+</html>
+
+<footer>
+    <p><b>Brooklyn Howarth</b> | Oxford, Ohio | © 2025 All Rights Reserved</p>  
+</footer>
+</body>
+</html>
